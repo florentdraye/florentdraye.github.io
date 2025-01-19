@@ -1,0 +1,296 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Enable smooth scrolling for the entire document */
+html {
+    scroll-behavior: smooth;
+}
+
+
+sup {
+    font-size: 0.8em; /* Slightly smaller than the main text */
+    vertical-align: super; /* Align as a superscript */
+    color: #555555; /* Subtle color for the superscript */
+    margin-left: 2px; /* Add spacing between the name and the superscript */
+}
+
+/* Unified Header Styles */
+h2, h3, h4 {
+    font-size: 30px; /* Set your desired size */
+    color: #000000; /* Consistent color */
+    margin-bottom: 20px; /* Consistent spacing */
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa; /* Match CV section background color */
+    color: #000000;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+header h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+    margin-left: 20px;
+}
+header nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+header nav ul li a:hover {
+    color: #000000;
+}
+
+/* About Section */
+.about-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.about-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 40px;
+}
+.profile-wrapper {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+.left-column {
+    flex: 3;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.left-column p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000000;
+}
+.left-column h4 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+.left-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.left-column ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 10px;
+    border-left: 3px solid #000000;
+}
+
+/* Picture Section */
+.right-column {
+    flex: 2;
+    text-align: center;
+}
+.right-column img {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 3px solid #000000;
+}
+.right-column p.title {
+    font-size: 16px;
+    font-style: italic;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.right-column p.institution {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.social-links a {
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000000;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.social-links a:hover {
+    transform: scale(1.2);
+    color: #000000;
+}
+
+/* CV Section */
+.cv-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Light gray background for distinction */
+    color: #000000;
+    line-height: 1.8; /* Adjust line height for more spacing */
+}
+.cv-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cv-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.cv-section ul li {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 10px;
+    border-left: 3px solid #000000;
+}
+
+/* News Section */
+.news-section {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for the section */
+    color: #000000;
+}
+
+.news-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Match other sections for consistency */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.news-item {
+    position: relative; /* For positioning the decorative element */
+    padding-left: 40px; /* Space for the decorative element */
+    margin-bottom: 20px; /* Space between news items */
+}
+
+.news-item::before {
+    content: "★"; /* Decorative symbol */
+    position: absolute;
+    left: 0; /* Align on the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 20px; /* Adjust size of the symbol */
+    color: #ff9800; /* Orange color for the symbol */
+}
+
+.news-item h3 {
+    font-size: 16px; /* Same font size as other headers */
+    margin-bottom: 5px; /* Space below the title */
+    color: #000000; /* Title color */
+}
+
+.news-item p {
+    font-size: 16px; /* Same font size as paragraph text */
+    line-height: 1.8; /* Spacing between lines */
+    color: #000000; /* Text color */
+}
+
+/* Research Section */
+.research-section {
+    padding: 60px 20px;
+    background-color: #f8f9fa; /* Light gray for the section background */
+    color: #000000;
+}
+
+.research-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff; /* White background for the container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the section box */
+}
+
+.research-item {
+    position: relative; /* For positioning the decorative element */
+    padding-left: 40px; /* Space for the decorative element */
+    margin-bottom: 20px; /* Space between research items */
+}
+
+.research-item::before {
+    content: "📄"; /* Decorative symbol for research (paper icon) */
+    position: absolute;
+    left: 0; /* Align on the left */
+    top: 50%;
+    transform: translateY(-50%); /* Center vertically */
+    font-size: 22px; /* Adjust size of the symbol */
+    color: #007bff; /* Blue color for the symbol */
+}
+
+.research-item h3 {
+    font-size: 16px; /* Same font size as other headers */
+    margin-bottom: 5px; /* Space below the title */
+    color: #000000; /* Title color */
+}
+
+.research-item p {
+    font-size: 16px; /* Same font size as paragraph text */
+    line-height: 1.8; /* Spacing between lines */
+    color: #000000; /* Text color */
+}
+
+.research-item small {
+    font-size: 12px; /* Smaller font size */
+    color: #666666; /* Subtle gray color */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+footer p {
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-wrapper {
+        flex-direction: column;
+    }
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+    .right-column {
+        margin-top: 20px;
+    }
+}
